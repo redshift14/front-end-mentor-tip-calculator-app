@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="./style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Tip calculator app</title>
+</head>
+<body>
+  <div class="container">
+    <div class="page-title">
+      <h3>SPLI</h3>
+      <h3>TTER</h3>
+    </div>
+    <div class="calculator-container">
+      <div class="left-part">
+        <div class="bill">
+          <label>Bill (max = $1000000)</label>
+          <input type="number" value="0" id="bill-input" max="1000000">
+        </div>
+        <div class="select-tip">
+          <label>Select Tip %</label>
+          <div class="grid-input">
+            <input type="button" value="5%">
+            <input type="button" value="10%">
+            <input type="button" value="15%">
+            <input type="button" value="25%">
+            <input type="button" value="50%">
+            <input type="number" placeholder="Custom" class="num-input" id="percentage-input" max="99">
+          </div>
+        </div>
+        <div class="num-people">
+          <div class="labels">
+            <label class="people-number-label">Number of People</label>
+            <label class="hint">Can't be Zero</label>
+          </div>
+          <input type="number" value="0" id="people-number-input" max="1000">
+        </div>
+      </div>
+      <div class="right-part">
+        <div class="lines">
+          <div class="line">
+            <div class="left">
+              <h5>Tip Amount</h5>
+              <h6>/ person</h6>
+            </div>
+            <div class="right">
+              <h1 id="tip-amount">$0.00</h1>
+            </div>
+          </div>
+          <div class="line">
+            <div class="left">
+              <h5>Total</h5>
+              <h6>/ person</h6>
+            </div>
+            <div class="right">
+              <h1 id="total-amount">$0.00</h1>
+            </div>
+          </div>
+        </div>
+        <input type="button" value="RESET" class="deactivated" id="reset-btn">
+      </div>
+    </div>
+  </div>
+  <script src="./main.js"></script>
+</body>
+</html>
